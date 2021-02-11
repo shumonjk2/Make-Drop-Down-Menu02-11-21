@@ -5,9 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Make Drop Down Menu</title>
-    <meta http-equiv="refresh" content="none">
+    <meta http-equiv="refresh" content="5">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    
+    <!-- favicon -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- favicon -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         *{
@@ -98,10 +106,47 @@ body{
 }
 /*-------Menu-bar End--------*/
 
-#YouTube-link{
-    margin:50px 10px 10px  150px;
-    padding: 11px;
+/*-------Article Section--------*/
+div.article-b{
+    width: 23%;
+    height: 200px;
+    background-color:#ffe6e6;
+    border: 2px solid red;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    float: left;
 }
+#article-b2{
+    border-left: 9px solid;
+    border-image: linear-gradient(200deg , blue , cyan);
+    border-image-slice: 2;
+    border-radius: 10px;
+    text-align: center;
+    
+}
+#YouTube-link {
+    width: 150px;
+    height: auto;
+    margin-top: 40px;
+    padding: 20px;
+    border: none;
+    background: #2bab0d;
+    border-radius: 10px;
+}
+#YouTube-link:hover{
+    background: #2bab0d;
+    color: #fff;
+    box-shadow: 0 12px 16px 0 #0000003d,0 17px 50px 0 #00000030;
+}
+#YouTube-link a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/*-------Article Section End--------*/
+
+
 
     </style>
 
@@ -157,7 +202,34 @@ body{
 <br>
 <br>
 <br>
-<h3>How To Make Drop Down Menu Using HTML And CSS | HTML Website Tutorials</h3>
-<button id="YouTube-link"> <a href="https://www.youtube.com/watch?v=wHFflWvii3M" target="_blank">YouTube</a> </button>
+<br>
+<br>
+<br>
+<section>
+    <div id="article-b2" class="article-b">
+        <h3>How To <em> Make Drop Down Menu</em> Using HTML And CSS | HTML Website Tutorials</h3>
+            <button id="YouTube-link"> <a href="https://www.youtube.com/watch?v=wHFflWvii3M" target="_blank">Video Link</a> </button>
+        </div>
+</section>
+<section>
+    <div id="article-b2" class="article-b">
+        <h3>How To Make Drop Down Menu Using HTML And CSS | HTML Website Tutorials</h3>
+            <button id="YouTube-link"> <a href="#" target="_blank">Video Link</a> </button>
+        </div>
+</section>
+
+<section>
+    <div id="article-b2" class="article-b">
+        <h3> How To Make Drop Down Menu Using HTML And CSS | HTML Website Tutorials</h3>
+            <button id="YouTube-link"> <a href="#" target="_blank">Video Link</a> </button>
+        </div>
+</section>
+<section>
+    <div id="article-b2" class="article-b">
+        <h3> How To Make Drop Down Menu Using HTML And CSS | HTML Website Tutorials</h3>
+            <button id="YouTube-link"> <a href="#" target="_blank">Video Link</a> </button>
+        </div>
+</section>
+
 </body>
 </html>

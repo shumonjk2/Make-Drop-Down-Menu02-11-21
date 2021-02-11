@@ -7,7 +7,7 @@
     <title>Make Drop Down Menu</title>
     <meta http-equiv="refresh" content="none">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="style.css">
+    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- favicon -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -18,10 +18,124 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <!-- favicon -->
+    <style>
+        *{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-repeat: no-repeat;
+    height: 600px;
+    font-family:sans-serif ;
+}
+/*-------Menu-bar--------*/
+.menu-bar{
+    background: rgb(0,100,0) ;
+    text-align: center;
+}
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+}
+.menu-bar ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.active,.menu-bar ul li:hover{
+    background: #2bab0d;
+    border-radius: 10px;
+}
+
+.menu-bar .fa{
+    margin-right: 8px;
+}
+.sub-menu-1{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background: rgb(0,100,0) ;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+    border-radius: 10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+    color: #b2ff00;
+}
+.fa-angle-right{
+    float: right;
+}
+.sub-menu-2{
+    display: none;
+}
+.hover-me:hover .sub-menu-2{
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 140px;
+    background: rgb(0,100,0);
+    border-radius: 10px;
+}
+/*-------Menu-bar End--------*/
+.address11{
+    border: 5px solid red;
+    width: 450px;
+    background-color: #fff;
+    padding: 15px;
+    margin-left: 250px;
+    margin-top: 100px;
+    font-size: 30px;
+    color: #030101;
+    
+    border-radius: 15px;
+
+    border-left: 15px solid;
+    border-image: linear-gradient(200deg , blue , cyan);
+    border-image-slice: 2;
+    border-radius: 10px;
+    text-align: center;
+        
+}
+.address11:hover{
+    background: #2bab0d;
+    color: #fff;
+    box-shadow: 0 12px 16px 0 #0000003d,0 17px 50px 0 #00000030;
+}
+
+</style>
     
 </head>
 <body>
-    <div class="menu-bar"> 
+    <div class="menu-bar">  
         <ul>
             <li class="active"><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
             <li><a href="#"><i class="fa fa-user"></i>About us</a>
@@ -64,12 +178,23 @@
             <li><a href="#"><i class="fa fa-angellist" aria-hidden="true"></i>Investers</a></li>
             <li><a href="#"><i class="fa fa-inr" aria-hidden="true"></i>Pricing</a></li>
             <li><a href="YouTube.html" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i>Css|Html</a></li>
-            <li><a href="contact.html"><i class="fa fa-phone" aria-hidden="true"></i>Contact</a></li>
+            
         </ul>
    </div>
-
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
    <section>
+        <address class="address11">
+            (Ananda Bazar More) <br>Ananda Bhavan, 136,136/1,137,138 <br> West Shewrapara, Mirpur,<br>Dhaka - North <br>
+            Dhaka-1216...
+            <br>
+            (+880) 1911734909
 
+        </address>
    </section>
 </body>
 </html>
