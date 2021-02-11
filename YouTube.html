@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make Drop Down Menu</title>
+    <meta http-equiv="refresh" content="none">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url background.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-repeat: no-repeat;
+    height: 600px;
+    font-family:sans-serif ;
+}
+/*-------Menu-bar--------*/
+.menu-bar{
+    background: rgb(0,100,0) ;
+    text-align: center;
+}
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+}
+.menu-bar ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.active,.menu-bar ul li:hover{
+    background: #2bab0d;
+    border-radius: 10px;
+}
+
+.menu-bar .fa{
+    margin-right: 8px;
+}
+.sub-menu-1{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background: rgb(0,100,0) ;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+    border-radius: 10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+    color: #b2ff00;
+}
+.fa-angle-right{
+    float: right;
+}
+.sub-menu-2{
+    display: none;
+}
+.hover-me:hover .sub-menu-2{
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 140px;
+    background: rgb(0,100,0);
+    border-radius: 10px;
+}
+/*-------Menu-bar End--------*/
+
+#YouTube-link{
+    margin:50px 10px 10px  150px;
+    padding: 11px;
+}
+
+    </style>
+
+
+</head>
+<body>
+    <div class="menu-bar">
+        <ul>
+            <li class="active"><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+            <li><a href="#"><i class="fa fa-user"></i>About us</a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li> <a href="#">Mission</a></li>
+                        <li> <a href="#">Vision</a></li>
+                        <li> <a href="#">Team</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#"><i class="fa fa-clone"></i>Services</a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li> <a href="#">We Designing</a></li>
+                        <li class="hover-me"> <a href="#">Marketig</a><i class="fa fa-angle-right"></i>
+                            <div class="sub-menu-2">
+                                <ul>
+                                    <li> <a href="#">SEO</a></li>
+                                    <li> <a href="#">Social Media</a></li>
+                                    <li> <a href="#">Email Marketig</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="hover-me"> <a href="#">Mobail App</a><i class="fa fa-angle-right"></i>
+                            <div class="sub-menu-2">
+                                <ul>
+                                    <li> <a href="#">Android App</a></li>
+                                    <li> <a href="#">Iso App</a></li>
+                                    <li> <a href="#">Ionic App</a></li>
+                                    <li> <a href="#">Flutter App</a></li>
+                                    <li> <a href="#">Unity App</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#"><i class="fa fa-users" aria-hidden="true"></i>Ckients</a></li>
+            <li><a href="#"><i class="fa fa-angellist" aria-hidden="true"></i>Investers</a></li>
+            <li><a href="#"><i class="fa fa-inr" aria-hidden="true"></i>Pricing</a></li>
+            
+            <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i>Contact</a></li>
+        </ul>
+   </div>
+<br>
+<br>
+<br>
+<h3>How To Make Drop Down Menu Using HTML And CSS | HTML Website Tutorials</h3>
+<button id="YouTube-link"> <a href="https://www.youtube.com/watch?v=wHFflWvii3M" target="_blank">YouTube</a> </button>
+</body>
+</html>
